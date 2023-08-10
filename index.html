@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Gestione carte da gioco</title>
+</head>
+<body class="bg-success-subtle">
+
+
+    <h1 class="d-flex justify-content-center mb-3 mt-3">Giochiamo a carte!!</h1>
+<div class="row mb-3">
+    <div id="container" class="container col-md-auto d-flex justify-content-center">
+        <button id="btn_card"><img src="src/dorso_carta.jpeg"></button>
+    </div>
+
+    <div id="result" class="container col-md-auto">
+        <button style="display: none;" class="btn btn-success" id="btn_par_canc">Cancella tutti i paragrafi</button>
+    </div>
+</div>
+    <div class="container d-flex justify-content-between"  id="option_bar">
+        <button id="show_deck" class="btn btn-primary ms-1 me-2">Stampa carte in console</button>
+        <button id="shuffle_deck" class="btn btn-secondary ms-1 me-2">Mischia carte</button>
+        <button id="take_card" class="btn btn-warning ms-1 me-2">Pesca carte</button>
+        <button id="reset_deck" class="btn btn-danger ms-1 me-2">reset carte</button>
+    </div>
+
+<div class="container mt-5" id="display_deck">
+    <div class="d-flex justify-content-left">
+        <h4 class="me-1">Carte attualmente nel mazzo: </h4> 
+        <h4 class="text-primary" style="display:none;" id="counterCards">6</h4>    
+    </div>
+    <!-- Aggiungo dinamicamente la lista delle carte come paragrafo-->
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
